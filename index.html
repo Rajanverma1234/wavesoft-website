@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-inner">
     <div class="nav-logo">
@@ -39,7 +38,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -55,7 +53,6 @@
   </div>
 </section>
 
-<!-- STATS -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat"><div class="stat-num">80%</div><div class="stat-label">Queries Automated</div></div>
@@ -65,7 +62,6 @@
   </div>
 </div>
 
-<!-- SERVICES -->
 <section id="services" class="section">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -120,7 +116,6 @@
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section id="how" class="section alt-bg">
   <div class="section-inner">
     <div class="section-header reveal" style="text-align:center;">
@@ -136,7 +131,6 @@
   </div>
 </section>
 
-<!-- INDUSTRIES -->
 <section id="industries" class="section">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -156,7 +150,6 @@
   </div>
 </section>
 
-<!-- PRICING -->
 <section id="pricing" class="section alt-bg">
   <div class="section-inner">
     <div class="section-header reveal" style="text-align:center;">
@@ -211,7 +204,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="section">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -249,7 +241,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="section alt-bg">
   <div class="section-inner">
     <div class="section-header reveal" style="text-align:center;">
@@ -289,7 +280,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
@@ -336,14 +326,12 @@
       <div><div class="modal-price-label">Starting Price</div><div class="modal-price-amount" id="modalPrice"></div></div>
       <div><div class="modal-price-label">Go Live In</div><div class="modal-price-amount" id="modalTimeline"></div></div>
     </div>
-    <div class="modal-btns">
-    <a href="https://finance-bot-v3.onrender.com" target="_blank" class="modal-btn-primary" onclick="closeModal()">🤖 Try Live Demo</a>      
-    <!-- <a href="https://wa.me/918299269534?text=Hi%20WaveSoft!%20I%20am%20interested%20in%20your%20AI%20service." class="modal-btn-wa" target="_blank">💬 WhatsApp Us</a> -->
+    <div class="modal-btns" id="modalBtns">
+      <!-- Buttons dynamically set by modals.js -->
     </div>
   </div>
 </div>
 
-<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/918299269534?text=Hi%20WaveSoft!%20I%20want%20a%20free%20AI%20demo." class="wa-float" title="Chat on WhatsApp">💬</a>
 
 <script src="assets/script.js"></script>
@@ -365,7 +353,7 @@ function handleSubmit() {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      access_key: '79d77907-18a2-4864-8542-469ddfa4e87f',
+      access_key: 'AAPKI_WEB3FORMS_KEY',
       name: name,
       email: email,
       phone: phone,
