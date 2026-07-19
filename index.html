@@ -128,26 +128,10 @@
       <h2 class="section-title">Up and Running in 4 Steps</h2>
     </div>
     <div class="steps-grid">
-      <div class="step reveal">
-        <div class="step-num">1</div>
-        <h3>Discovery Call</h3>
-        <p>We understand your business and automation goals — no tech jargon needed from your side.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num">2</div>
-        <h3>Custom AI Build</h3>
-        <p>We build and train your AI on your own business data — FAQs, products, policies, documents.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num">3</div>
-        <h3>Deploy & Integrate</h3>
-        <p>Your AI goes live on your website, WhatsApp, or app. We handle all the technical setup.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num">4</div>
-        <h3>Monitor & Improve</h3>
-        <p>We track performance and keep improving your AI as your business grows.</p>
-      </div>
+      <div class="step reveal"><div class="step-num">1</div><h3>Discovery Call</h3><p>We understand your business and automation goals — no tech jargon needed from your side.</p></div>
+      <div class="step reveal"><div class="step-num">2</div><h3>Custom AI Build</h3><p>We build and train your AI on your own business data — FAQs, products, policies, documents.</p></div>
+      <div class="step reveal"><div class="step-num">3</div><h3>Deploy & Integrate</h3><p>Your AI goes live on your website, WhatsApp, or app. We handle all the technical setup.</p></div>
+      <div class="step reveal"><div class="step-num">4</div><h3>Monitor & Improve</h3><p>We track performance and keep improving your AI as your business grows.</p></div>
     </div>
   </div>
 </section>
@@ -259,7 +243,6 @@
           <span class="tag">NLP</span>
           <span class="tag">WhatsApp API</span>
           <span class="tag">AI Automation</span>
-        <div class="card-cta">View Details →</div>
         </div>
       </div>
     </div>
@@ -276,31 +259,19 @@
     </div>
     <div class="contact-grid">
       <div class="contact-info reveal">
-        <div class="c-item">
-          <div class="c-icon">📧</div>
-          <div><h4>Email</h4><p>rajanverma0244@gmail.com</p></div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📱</div>
-          <div><h4>Phone / WhatsApp</h4><p>+91 82992 69534</p></div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📍</div>
-          <div><h4>Office</h4><p>Q231, 4th Floor, South City 2<br>Near Park Hospital, Sector 49</p></div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">🕐</div>
-          <div><h4>Business Hours</h4><p>Monday – Saturday, 9 AM – 7 PM IST</p></div>
-        </div>
+        <div class="c-item"><div class="c-icon">📧</div><div><h4>Email</h4><p>rajanverma0244@gmail.com</p></div></div>
+        <div class="c-item"><div class="c-icon">📱</div><div><h4>Phone / WhatsApp</h4><p>+91 82992 69534</p></div></div>
+        <div class="c-item"><div class="c-icon">📍</div><div><h4>Office</h4><p>Q231, 4th Floor, South City 2<br>Near Park Hospital, Sector 49</p></div></div>
+        <div class="c-item"><div class="c-icon">🕐</div><div><h4>Business Hours</h4><p>Monday – Saturday, 9 AM – 7 PM IST</p></div></div>
         <a href="https://wa.me/918299269534?text=Hi%20WaveSoft!%20I%20want%20a%20free%20AI%20demo." class="wa-btn">💬 Chat on WhatsApp</a>
       </div>
       <div class="contact-form reveal">
-        <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Amit Sharma"/></div>
-        <div class="form-group"><label>Business Email</label><input type="email" placeholder="you@company.com"/></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        <div class="form-group"><label>Your Name</label><input type="text" id="fname" placeholder="e.g. Amit Sharma"/></div>
+        <div class="form-group"><label>Business Email</label><input type="email" id="femail" placeholder="you@company.com"/></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX"/></div>
         <div class="form-group">
           <label>Service Interested In</label>
-          <select>
+          <select id="fservice">
             <option value="">Select a service...</option>
             <option>AI Customer Support Bot</option>
             <option>WhatsApp AI Automation</option>
@@ -311,7 +282,7 @@
             <option>Custom AI Solution</option>
           </select>
         </div>
-        <div class="form-group"><label>About Your Business</label><textarea placeholder="Briefly describe your business and what you want to automate..."></textarea></div>
+        <div class="form-group"><label>About Your Business</label><textarea id="fmessage" placeholder="Briefly describe your business and what you want to automate..."></textarea></div>
         <button class="submit-btn" onclick="handleSubmit()">Send Message →</button>
       </div>
     </div>
@@ -352,7 +323,6 @@
   </div>
 </footer>
 
-
 <!-- MODAL POPUP -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box">
@@ -363,14 +333,8 @@
     <p class="modal-desc" id="modalDesc"></p>
     <ul class="modal-features" id="modalFeatures"></ul>
     <div class="modal-price">
-      <div>
-        <div class="modal-price-label">Starting Price</div>
-        <div class="modal-price-amount" id="modalPrice"></div>
-      </div>
-      <div>
-        <div class="modal-price-label">Go Live In</div>
-        <div class="modal-price-amount" id="modalTimeline"></div>
-      </div>
+      <div><div class="modal-price-label">Starting Price</div><div class="modal-price-amount" id="modalPrice"></div></div>
+      <div><div class="modal-price-label">Go Live In</div><div class="modal-price-amount" id="modalTimeline"></div></div>
     </div>
     <div class="modal-btns">
       <a href="#contact" class="modal-btn-primary" onclick="closeModal()">📋 Get Free Demo</a>
@@ -384,5 +348,47 @@
 
 <script src="assets/script.js"></script>
 <script src="assets/modals.js"></script>
+<script>
+function handleSubmit() {
+  const name = document.getElementById('fname').value;
+  const email = document.getElementById('femail').value;
+  const phone = document.getElementById('fphone').value;
+  const service = document.getElementById('fservice').value;
+  const message = document.getElementById('fmessage').value;
+
+  if (!name || !email) {
+    alert('Name aur email zaroori hai!');
+    return;
+  }
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      // access_key: '79d77907-18a2-4864-8542-469ddfa4e87f',
+      name: name,
+      email: email,
+      phone: phone,
+      service: service,
+      message: message,
+      subject: `New WaveSoft Inquiry from ${name}`
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      alert('Message sent! Rajan will contact you within 24 hours. 🙏');
+      document.getElementById('fname').value = '';
+      document.getElementById('femail').value = '';
+      document.getElementById('fphone').value = '';
+      document.getElementById('fservice').value = '';
+      document.getElementById('fmessage').value = '';
+    } else {
+      alert('Error. Try again.');
+    }
+  })
+  .catch(() => alert('Error. Try again.'));
+}
+</script>
 </body>
 </html>
